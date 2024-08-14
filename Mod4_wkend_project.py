@@ -164,6 +164,7 @@ class Library:
 
 
     def main_menu(self):
+        flag = True
         while True:
             commands = (''' 
         Welcome to the Library Management System!
@@ -190,6 +191,7 @@ class Library:
 
 
     def book_operations(self):
+            flag = True
             while True:
                 print("\nBook Operations:")
                 print("1. Add a new book")
@@ -217,6 +219,7 @@ class Library:
 
 
     def user_operations(self):
+        flag = True
         while True:
             print("\nUser Operations:")
             print("1. Add a new user")
@@ -238,6 +241,7 @@ class Library:
 
 
     def author_operations(self):
+        flag = True
         while True:
             print("\nAuthor Operations:")
             print("1. Add a new author")
@@ -257,7 +261,8 @@ class Library:
             else:
                 print("Invalid entry, please try again.")
                 
-Library.main_menu()   
+library = Library() 
+library.main_menu() 
 
 
 
